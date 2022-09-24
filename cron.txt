@@ -1,0 +1,1 @@
+* * * * * www-data wp cron event run --due-now --path=/var/www/html > /var/www/html/cron.log
