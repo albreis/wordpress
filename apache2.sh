@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 service cron start
-apache2-foreground -D FOREGROUND
+apache2-foreground
