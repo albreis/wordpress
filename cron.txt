@@ -1,1 +1,1 @@
-* * * * * wp cron event run --due-now --allow-root --path=/var/www/html > /var/www/html/cron.log
+* * * * * /usr/local/bin/wp cron event run --due-now --allow-root --path=/var/www/html

@@ -5,4 +5,5 @@ COPY cron.txt /
 COPY apache2.sh /usr/bin/apache2.sh
 RUN chmod +x /usr/bin/apache2.sh
 COPY --from=wordpress:cli /usr/local/bin/wp /usr/local/bin/wp
+RUN touch /var/log/cron.log
 CMD ["apache2.sh"]
