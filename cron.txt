@@ -1,1 +1,1 @@
-* * * * * /usr/local/bin/wp cron event run --due-now --allow-root --path=/var/www/html
+* * * * * for env in $( cat /etc/environment ); do export $(echo $env | sed -e 's/"//g'); done && /usr/local/bin/wp cron event run --due-now --allow-root --path=/var/www/html
